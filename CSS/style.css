@@ -1,22 +1,35 @@
 /* Reset základního stylu */
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --button-radius: 35px;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+  }
+  
+  * {
     box-sizing: border-box;
-    }
-        
-        
-    /* Styl pro header */
-    header {
-        width: 100%;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 3px 6px #00000029;
-        opacity: 1;
-        top: 0px;
-        left: 0px;
-        width: 1627px;
-        height: 70px;
-    }
+  }
+  
+  body {
+    font-family: var(--font-open-sans);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-family: var(--font-raleway);
+    font-size: 2.25rem;
+  }
+  
     
     /* Kontejner o šířce 1352px, centrovaný */
     .container {
@@ -43,9 +56,14 @@
     
     /* Styl pro navigaci */
     .nav-list {
-        list-style: none;
+        text-align: center;
+        font: normal normal bold 11px/15px Open Sans;
+        letter-spacing: 3.28px;
+        color: #A5A5A5;
+        opacity: 1;
         display: flex;
-        gap: 20px; /* Rozestupy mezi položkami */
+        justify-content: flex-end;
+        align-items: center;
     }
     
     /* Styl pro odkazy v navigaci */
@@ -63,3 +81,144 @@
         color: #000; /* Změna barvy na černou */
         text-decoration: underline; /* Podtržení */
     }
+
+    .info-section {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        background-image: url(../Image/Background.png);
+    }
+   
+    .info-content {
+        position: relative;
+        z-index: 2;
+    }
+    
+    /*nadpis */
+    .info-title {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    /*popis */
+    .info-description {
+        font-size: 1.2em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    /*tlačítko */
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    
+    .cta-button:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Styl pro pozadí */
+    
+    .img {
+        position: absolute;
+        bottom: 0;
+        top: 396px;
+        left: -54.5px;
+        width: 1735px;
+        height: 594px;
+        opacity: 0.3; /* Průhlednost */
+    }
+ 
+/**
+ * Statistics
+ */
+ .statistics {
+    margin-top: 100px;
+  }
+  
+  .statistics__title {
+    text-align: center;
+  }
+  
+  .statistics__container {
+    max-width: 800px;
+    margin: 100px auto 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .statistics__single {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-raleway);
+  }
+  
+  .statistics__circle {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;
+  }
+  
+  .statistics__img {
+    position: absolute;
+  }
+  
+  .statistics__single:nth-child(1) .statistics__circle {
+    background-color: var(--color-redish);
+  }
+  
+  .statistics__single:nth-child(1) .statistics__img {
+    top: 0;
+    left: 45%;
+  }
+  
+  .statistics__single:nth-child(2) .statistics__circle {
+    background-color: var(--color-primary);
+  }
+  
+  .statistics__single:nth-child(2) .statistics__img {
+    top: 14px;
+    left: 47%;
+  }
+  
+  .statistics__single:nth-child(3) .statistics__circle {
+    background-color: var(--color-green);
+  }
+  
+  .statistics__single:nth-child(3) .statistics__img {
+    top: 6px;
+    left: 50%;
+  }
+  
+  .statistics__number {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.1875rem;
+    margin-top: 13px;
+  }
+  
+  .statistics__description {
+    color: var(--color-grey);
+    margin-top: 19px;
+  }
+
+  
