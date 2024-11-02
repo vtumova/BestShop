@@ -1,0 +1,65 @@
+/* Reset základního stylu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+        
+        
+    /* Styl pro header */
+    header {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+        width: 1627px;
+        height: 70px;
+    }
+    
+    /* Kontejner o šířce 1352px, centrovaný */
+    .container {
+        width: 1352px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Styl pro logo */    
+    .logo a {
+        top: 0px;
+        left: 0px;
+        width: 1627px;
+        height: 70px;
+        text-align: left;
+        font: normal normal 300 32px/37px Raleway;
+        letter-spacing: 0px;
+        color: #08A6E4;
+        opacity: 1;
+    }
+    
+    
+    /* Styl pro navigaci */
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 20px; /* Rozestupy mezi položkami */
+    }
+    
+    /* Styl pro odkazy v navigaci */
+    .nav-list a {
+        text-decoration: none;
+        color: #666; /* Šedá barva pro základní stav */
+        font-weight: bold;
+        padding: 5px;
+        transition: color 0.3s, text-decoration 0.3s;
+    }
+    
+    
+    /* Zvýraznění při najetí myší */
+    .nav-list a:hover {
+        color: #000; /* Změna barvy na černou */
+        text-decoration: underline; /* Podtržení */
+    }
