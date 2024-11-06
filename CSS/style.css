@@ -38,31 +38,33 @@ h2 {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-  }
+}
 
-  .logo {
+.logo {
     color: #08A6E4;
     width: 32px;
-  }
-   
-  .page-nav-list {
+}
+
+.page-nav-list {
     display: flex;
 }
 
-  .page-nav-list li {
-    margin-left:20px;
-  }
-  .page-nav-list a {
+.page-nav-list li {
+    margin-left: 20px;
+}
+
+.page-nav-list a {
     text-transform: uppercase;
     text-decoration: none;
     color: #8E9696;
     font-weight: 600;
-  }
-  .page-nav-list a:hover {
-    color: var(--color-primary);
-  }
+}
 
-  /*info sekce*/
+.page-nav-list a:hover {
+    color: var(--color-primary);
+}
+
+/*info sekce*/
 
 .info-section {
     position: relative;
@@ -75,7 +77,9 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    }
+    background-image: url(../Image/Background.png);
+    background-position: bottom center;
+}
 
 .info-content {
     position: relative;
@@ -116,11 +120,11 @@ h2 {
 /* Styl pro pozadí pod sekci - info panel*/
 
 image-info {
-    
+
     width: 100%;
     bottom: 0;
     background-image: url(../Image/Background.png);
-    
+
 }
 
 /**
@@ -375,7 +379,8 @@ form {
 }
 
 /* Styl pro textová pole */
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -407,12 +412,12 @@ input[type="text"], input[type="email"] {
     position: relative;
 }
 
-.custom-checkbox input:checked + .checkmark {
+.custom-checkbox input:checked+.checkmark {
     background-color: #007bff;
     border-color: #007bff;
 }
 
-.custom-checkbox input:checked + .checkmark::after {
+.custom-checkbox input:checked+.checkmark::after {
     content: "✔";
     color: #fff;
     font-size: 0.9em;
@@ -478,5 +483,5 @@ button[type="submit"]:hover {
 
 .social-link:hover {
     color: #007bff;
-   
+
 }
