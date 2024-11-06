@@ -11,157 +11,137 @@
     --button-radius: 35px;
     --font-raleway: "Raleway", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
-  }
-  
-  * {
+}
+
+* {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: var(--font-open-sans);
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-family: var(--font-raleway);
     font-size: 2.25rem;
+}
+
+/*Záhlaví*/
+/* Kontejner o šířce 1352px, centrovaný */
+.page-header .container {
+    height: 1352px center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
   }
-  
-    
-    /* Kontejner o šířce 1352px, centrovaný */
-    .container {
-        width: 1352px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    /* Styl pro logo */    
-    .logo a {
-        top: 0px;
-        left: 0px;
-        width: 1627px;
-        height: 70px;
-        text-align: left;
-        font: normal normal 300 32px/37px Raleway;
-        letter-spacing: 0px;
-        color: #08A6E4;
-        opacity: 1;
-    }
-    
-    
-    /* Styl pro navigaci */
-    .nav-list {
-        text-align: center;
-        font: normal normal bold 11px/15px Open Sans;
-        letter-spacing: 3.28px;
-        color: #A5A5A5;
-        opacity: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    /* Styl pro odkazy v navigaci */
-    .nav-list a {
-        text-decoration: none;
-        color: #666; /* Šedá barva pro základní stav */
-        font-weight: bold;
-        padding: 5px;
-        transition: color 0.3s, text-decoration 0.3s;
-    }
-    
-    
-    /* Zvýraznění při najetí myší */
-    .nav-list a:hover {
-        color: #000; /* Změna barvy na černou */
-        text-decoration: underline; /* Podtržení */
+
+  .logo {
+    color: #08A6E4;
+    width: 32px;
+  }
+   
+  .page-nav-list {
+    display: flex;
+}
+
+  .page-nav-list li {
+    margin-left:20px;
+  }
+  .page-nav-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8E9696;
+    font-weight: 600;
+  }
+  .page-nav-list a:hover {
+    color: var(--color-primary);
+  }
+
+  /*info sekce*/
+
+.info-section {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
     }
 
-    .info-section {
-        position: relative;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 60px 20px;
-        text-align: center;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        background-color: #ffffff;
-        background-image: url(../Image/Background.png);
-    }
-   
-    .info-content {
-        position: relative;
-        z-index: 2;
-    }
+.info-content {
+    position: relative;
+    z-index: 2;
+}
+
+/*nadpis */
+.info-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/*popis */
+.info-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*tlačítko */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styl pro pozadí pod sekci - info panel*/
+
+image-info {
     
-    /*nadpis */
-    .info-title {
-        font-size: 2em;
-        color: #333;
-        margin-bottom: 10px;
-    }
-    /*popis */
-    .info-description {
-        font-size: 1.2em;
-        color: #666;
-        margin-bottom: 20px;
-    }
+    width: 100%;
+    bottom: 0;
+    background-image: url(../Image/Background.png);
     
-    /*tlačítko */
-    .cta-button {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #fff;
-        background-color: #007bff;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s;
-    }
-    
-    
-    .cta-button:hover {
-        background-color: #0056b3;
-    }
-    
-    /* Styl pro pozadí */
-    
-    .img {
-        position: absolute;
-        bottom: 0;
-        top: 396px;
-        left: -54.5px;
-        width: 1735px;
-        height: 594px;
-        opacity: 0.3; /* Průhlednost */
-    }
- 
+}
+
 /**
  * Statistics
  */
- .statistics {
+.statistics {
     margin-top: 100px;
-  }
-  
-  .statistics__title {
-    text-align: center;
-  }
-  
-  .statistics__container {
+}
+
+.statistics__title {
+    text-align: top;
+}
+
+.statistics__container {
     max-width: 800px;
     margin: 100px auto 120px;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .statistics__single {
+}
+
+.statistics__single {
     max-width: 160px;
     display: flex;
     flex-direction: column;
@@ -169,56 +149,334 @@
     align-items: center;
     text-align: center;
     font-family: var(--font-raleway);
-  }
-  
-  .statistics__circle {
+}
+
+.statistics__circle {
     border-radius: 50%;
     width: 63px;
     height: 63px;
     position: relative;
-  }
-  
-  .statistics__img {
+}
+
+.statistics__img {
     position: absolute;
-  }
-  
-  .statistics__single:nth-child(1) .statistics__circle {
+}
+
+.statistics__single:nth-child(1) .statistics__circle {
     background-color: var(--color-redish);
-  }
-  
-  .statistics__single:nth-child(1) .statistics__img {
+}
+
+.statistics__single:nth-child(1) .statistics__img {
     top: 0;
     left: 45%;
-  }
-  
-  .statistics__single:nth-child(2) .statistics__circle {
+}
+
+.statistics__single:nth-child(2) .statistics__circle {
     background-color: var(--color-primary);
-  }
-  
-  .statistics__single:nth-child(2) .statistics__img {
+}
+
+.statistics__single:nth-child(2) .statistics__img {
     top: 14px;
     left: 47%;
-  }
-  
-  .statistics__single:nth-child(3) .statistics__circle {
+}
+
+.statistics__single:nth-child(3) .statistics__circle {
     background-color: var(--color-green);
-  }
-  
-  .statistics__single:nth-child(3) .statistics__img {
+}
+
+.statistics__single:nth-child(3) .statistics__img {
     top: 6px;
     left: 50%;
-  }
-  
-  .statistics__number {
+}
+
+.statistics__number {
     font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: 0.1875rem;
     margin-top: 13px;
-  }
-  
-  .statistics__description {
+}
+
+.statistics__description {
     color: var(--color-grey);
     margin-top: 19px;
-  }
+}
 
-  
+/*Benefits*/
+
+.benefits {
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    top: 1444px;
+    left: -0.00000762939453125px;
+    width: 1627px;
+    height: 1395px;
+}
+
+.benefits_macbook2 {
+    top: 1640px;
+    left: 286px;
+    width: 416px;
+    height: 188px;
+    opacity: 1;
+}
+
+.image-benefits-macbook2 {
+    top: 1662px;
+    left: 871px;
+    width: 386px;
+    height: 219px;
+}
+
+.benefits-mobile {
+    top: 2025px;
+    left: 939px;
+    width: 416px;
+    height: 230px;
+
+}
+
+.pricing {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pricing__box {
+    width: 370px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing__details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.pricing__type {
+    font-size: 1.25rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricing__price {
+    font-size: 2.875rem;
+    font-family: var(--font-open-sans);
+    font-weight: 300;
+    margin-top: 25px;
+    color: var(--accent-color);
+}
+
+.pricing__limited {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricing__items {
+    text-align: center;
+}
+
+.pricing__item {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../Image/Checkmark.svg");
+}
+
+.pricing__item--not::before {
+    background-image: url("../Image/close.svg");
+}
+
+.pricing__box .btn {
+    position: relative;
+    bottom: -25px;
+    font-size: 0.8125rem;
+    background-color: var(--accent-color);
+}
+
+/*formulář pro kontaktování*/
+/* Styl sekce kontakt */
+.contact-section {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Levý sloupec */
+.contact-left {
+    flex: 1;
+}
+
+.contact-left h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-left p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Informace o kontaktu */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+/* Pravý sloupec */
+.contact-right {
+    flex: 1;
+}
+
+/* Styl formuláře */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styl pro textová pole */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styl vlastního zaškrtávacího políčka */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-checkbox .checkmark {
+    width: 18px;
+    height: 18px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    position: relative;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    content: "✔";
+    color: #fff;
+    font-size: 0.9em;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+}
+
+/* Styl tlačítka */
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*zápatí*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo .logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styl pro sociální odkazy */
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* Styl pro každý sociální odkaz */
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #007bff;
+   
+}
