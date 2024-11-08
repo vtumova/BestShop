@@ -1,4 +1,4 @@
-/* Reset základního stylu */
+/* nastavení pro všechny */
 :root {
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
@@ -19,6 +19,8 @@
 
 body {
     font-family: var(--font-open-sans);
+    max-width: 1626px center;
+
 }
 
 a {
@@ -28,6 +30,13 @@ a {
 h2 {
     font-family: var(--font-raleway);
     font-size: 2.25rem;
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+
+
 }
 
 /*Záhlaví*/
@@ -43,6 +52,9 @@ h2 {
 .logo {
     color: #08A6E4;
     width: 32px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .page-nav-list {
@@ -56,12 +68,16 @@ h2 {
 .page-nav-list a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #8E9696;
-    font-weight: 600;
+    color: var(--color-grey);
+    font-weight: 11px;
+    font-style: Open Sans , Bold;
+
+
 }
 
 .page-nav-list a:hover {
-    color: var(--color-primary);
+    color: var(--color-black);
+    text-decoration: underline #007bff 10px ;
 }
 
 /*info sekce*/
@@ -77,13 +93,20 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    background-image: url(../Image/Background.png);
     background-position: bottom center;
 }
 
 .info-content {
     position: relative;
     z-index: 2;
+}
+
+.background {
+    display: flex;
+    max-width: 1626px;
+    max-height: 4234px;
+    background-image: url(../Image/Background.png);
+
 }
 
 /*nadpis */
